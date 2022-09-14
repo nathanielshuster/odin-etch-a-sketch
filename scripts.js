@@ -8,11 +8,17 @@ function createGrid() {
     for (let i = 0; i < 16; i++) {
       const col = document.createElement('div');
       col.setAttribute('class', 'box');
+      col.addEventListener('mouseover', changeColor);
       div.appendChild(col);
     }
 
     container.appendChild(div);
   }
+}
+
+function changeColor(e) {
+  let box = e.target;
+  box.style.backgroundColor = 'purple';
 }
 
 createGrid();

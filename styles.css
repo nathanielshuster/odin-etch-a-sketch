@@ -1,0 +1,9 @@
+.flex-container {
+  display: flex;
+}
+
+.box {
+  height: 42px;
+  background-color: peachpuff;
+  flex: 1;
+}
